@@ -1,0 +1,91 @@
+{
+  "npm.packageManager": "bun",
+  "npm.scriptRunner": "bun",
+
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "css",
+    "tailwindcss"
+  ],
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.glsl": "glsl",
+    "*.gltf": "json",
+    "*.js": "javascript",
+    "*.json5": "jsonc",
+    "*.md": "markdown",
+    "*.tsx": "typescriptreact",
+    "*.vue": "vue"
+  },
+
+  "i18n-ally.editor.preferEditor": true,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.enabledFrameworks": [
+    "vue"
+  ],
+  "i18n-ally.enabledParsers": [
+    "json",
+    "json5"
+  ],
+  "i18n-ally.extract.autoDetect": true,
+  "i18n-ally.extract.targetPickingStrategy": "most-similar-by-key",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.dirStructure": "auto",
+  "i18n-ally.localesPaths": [
+    "src/locales",
+    "node_modules/@ngt/kit/dist/locales",
+    "node_modules/@ngt/kit/src/locales"
+  ],
+  "i18n-ally.sourceLanguage": "zh-CN",
+  "i18n-ally.namespace": true,
+
+  "vue.autoInsert.dotValue": true,
+  "vue.hover.rich": true,
+  "vue.inlayHints.destructuredProps": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.vBindShorthand": true,
+
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "icon",
+    "enter-active-class",
+    "leave-active-class",
+    "enter-from-class",
+    "enter-to-class",
+    "leave-from-class",
+    "base-class",
+    "loading"
+  ],
+  "tailwindCSS.classFunctions": [
+    "cn",
+    "$cn",
+    "cva"
+  ],
+
+  "iconify.prefixes": [],
+  "iconify.suffixes": [
+    ""
+  ]
+}

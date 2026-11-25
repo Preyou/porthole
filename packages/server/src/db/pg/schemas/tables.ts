@@ -1,0 +1,6 @@
+export { localAccounts } from './local-accounts.table'
+export { logtoAccountRevocations } from './logto-account-revocations.table'
+export { portholeSessions, portholeShares } from './porthole.table'
+export { todos } from './todos.table'
+export { userIdentities } from './user-identities.table'
+export { users } from './users.table'

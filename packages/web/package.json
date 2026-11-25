@@ -1,0 +1,83 @@
+{
+  "name": "@ngt/starter",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue + NGT UI 前端模板，包含主题、双语、认证接入与待办示例",
+  "license": "UNLICENSED",
+  "ngt": {
+    "aiContext": {
+      "app": "./.ai/public/app-usage.md",
+      "sharedCapabilities": "./.ai/public/shared-capability-usage.md",
+      "request": "./.ai/public/request-usage.md",
+      "globals": "./.ai/public/global-helpers.md"
+    }
+  },
+  "scripts": {
+    "check:ngt-docs": "bunx --bun ngt-ui-docs export --out docs/ngtui --check",
+    "postinstall": "bun run sync:ngt-docs",
+    "sync:ngt-docs": "bunx --bun ngt-ui-docs export --out docs/ngtui",
+    "dev": "bunx --bun vite",
+    "build": "bun run type-check && bunx --bun vite build",
+    "preview": "bunx --bun vite preview",
+    "start": "caddy run --config Caddyfile --adapter caddyfile",
+    "check": "bun run docs:check && bun run check:ngt-docs && bun run type-check && bun run lint",
+    "upgrade:ngt": "bun scripts/upgrade-ngt-dependencies.ts",
+    "generate": "bun run openapi-ts && bun scripts/generate-vite-artifacts.mjs",
+    "openapi-ts": "openapi-ts",
+    "type-check": "bunx vue-tsc -p tsconfig.json --noEmit",
+    "format": "eslint . --fix",
+    "lint": "bunx --bun eslint .",
+    "build:review": "bun run type-check && bunx --bun vite build --mode review --outDir dist-review",
+    "preview:review": "bunx --bun vite preview --mode review --outDir dist-review",
+    "docs:check": "bun scripts/check-docs.ts"
+  },
+  "dependencies": {
+    "@alova/adapter-axios": "2.0.20",
+    "@hey-api/openapi-ts": "^0.94.4",
+    "@intlify/unplugin-vue-i18n": "^11.0.1",
+    "@ngt/ui": "git+ssh://git@github.com/Preyou/ngt-ui.git#2.0.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vueuse/core": "^14.3.0",
+    "alova": "3.5.3",
+    "axios": "^1.13.6",
+    "qrcode": "1.5.4",
+    "reka-ui": "^2.9.10",
+    "vee-validate": "^4.15.1",
+    "vite": "^7.2.5",
+    "vite-plugin-env-parse": "^1.0.15",
+    "vue": "^3.5.24",
+    "vue-i18n": "^11.2.1",
+    "vue-router": "^5.1.0",
+    "vue-sonner": "^2.0.9",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "@iconify/tailwind4": "^1.2.0",
+    "@ngt/vite-plugin-annotations": "git+ssh://git@github.com/Preyou/ngt-vite-plugin-annotations.git#31d679bd544f85cb9545aa0428d9ba14d43a85f6",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "@types/qrcode": "1.5.6",
+    "@vitejs/plugin-vue-jsx": "^5.1.6",
+    "@vue/devtools-api": "^8.1.5",
+    "@vue/tsconfig": "^0.8.1",
+    "bun-types": "latest",
+    "eslint": "^9.39.1",
+    "eslint-plugin-format": "^1.1.0",
+    "eslint-plugin-tailwindcss": "^4.0.4",
+    "tailwindcss": "^4.1.17",
+    "tsx": "^4.20.6",
+    "type-fest": "^5.3.1",
+    "typescript": "^5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vite-plugin-lucide-preprocess": "1.13.0",
+    "vite-plugin-vue-devtools": "^8.1.5",
+    "vue-component-type-helpers": "^3.3.9",
+    "vue-tsc": "^3.1.4"
+  },
+  "overrides": {
+    "@ngt/ui": "git+ssh://git@github.com/Preyou/ngt-ui.git#2.0.1"
+  }
+}

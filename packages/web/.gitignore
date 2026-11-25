@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+dist
+output
+.playwright-cli
+*.tsbuildinfo
+docs/ngtui
+
+*.local
+.env.local
+.env.*.local
+
+dist-review

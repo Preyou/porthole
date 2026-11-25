@@ -1,0 +1,1 @@
+ALTER TABLE "porthole_shares" ADD COLUMN "description" text;

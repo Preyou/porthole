@@ -1,0 +1,2 @@
+ALTER TABLE "porthole_shares" ADD COLUMN "upstream_host_mode" text DEFAULT 'original' NOT NULL;--> statement-breakpoint
+ALTER TABLE "porthole_shares" ADD CONSTRAINT "porthole_upstream_host_mode" CHECK ("upstream_host_mode" IN ('original', 'local'));

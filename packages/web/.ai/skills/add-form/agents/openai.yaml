@@ -1,0 +1,4 @@
+interface:
+  display_name: ngtui 表单
+  short_description: 按 ngtui Schema 与提交语义选择、实现并验证业务表单
+  default_prompt: 使用 $add-form 在 ngtui app 中选择并实现合适的表单结构。

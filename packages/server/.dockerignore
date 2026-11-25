@@ -1,0 +1,11 @@
+**
+!package.json
+!bun.lock
+!drizzle.config.ts
+!tsconfig.json
+!drizzle/
+!drizzle/**
+!scripts/
+!scripts/database.ts
+!src/
+!src/**

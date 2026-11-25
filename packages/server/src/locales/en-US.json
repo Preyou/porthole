@@ -1,0 +1,19 @@
+{
+  "10000014": "This Logto identity has not been provisioned; call POST /api/auth/provision first",
+  "10000400": "Invalid request",
+  "10000409": "Operation conflict",
+  "20000001": "Request successful",
+  "10000403": "Permission denied",
+  "10000000": "Server error",
+  "10000422": "Invalid input",
+  "10000011": "Unsupported sort field",
+  "10000013": "Sort order must be asc or desc",
+  "10000404": "Resource not found",
+  "10000503": "Service temporarily unavailable",
+  "10000012": "Please specify a sort field",
+  "20000000": "Request successful",
+  "10000401": "Please sign in",
+  "10000010": "The request contains unsupported query parameters",
+  "10000015": "Logto login is not configured",
+  "10000429": "Too many sign-in attempts. Try again later"
+}

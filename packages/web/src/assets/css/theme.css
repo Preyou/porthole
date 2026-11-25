@@ -1,0 +1,37 @@
+@theme inline {
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+@layer base {
+  :where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    [data-slot='text'][data-variant='display'],
+    [data-slot='text'][data-variant='title'],
+    [data-slot='text'][data-variant='heading'],
+    [data-slot='card-title'],
+    [data-slot='app-brand-name']
+  ) {
+    --typography-font-family: var(--typography-editorial-font-family);
+    font-family: var(--typography-editorial-font-family);
+  }
+}
+
+@utility desktop-workspace {
+  width: 100%;
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: 2rem;
+
+  @media (width >= 96rem) {
+    padding: 3rem;
+  }
+}

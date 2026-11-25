@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ngt.local/schemas/themes/default.schema.json",
+  "title": "App theme variables",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/$defs/cssValue"
+  },
+  "required": [
+    "radius",
+    "background",
+    "foreground",
+    "card",
+    "card-foreground",
+    "popover",
+    "popover-foreground",
+    "primary",
+    "primary-foreground",
+    "secondary",
+    "secondary-foreground",
+    "muted",
+    "muted-foreground",
+    "accent",
+    "accent-foreground",
+    "destructive",
+    "destructive-foreground",
+    "warning",
+    "warning-foreground",
+    "success",
+    "success-foreground",
+    "info",
+    "info-foreground",
+    "brand",
+    "brand-foreground",
+    "border",
+    "input",
+    "ring",
+    "chart-1",
+    "chart-2",
+    "chart-3",
+    "chart-4",
+    "chart-5",
+    "sidebar",
+    "sidebar-foreground",
+    "sidebar-primary",
+    "sidebar-primary-foreground",
+    "sidebar-accent",
+    "sidebar-accent-foreground",
+    "sidebar-border",
+    "sidebar-ring",
+    "typography-font-family",
+    "typography-font-style",
+    "typography-text-transform",
+    "typography-display-font-size",
+    "typography-display-font-weight",
+    "typography-display-letter-spacing",
+    "typography-display-line-height",
+    "typography-title-font-size",
+    "typography-title-font-weight",
+    "typography-title-letter-spacing",
+    "typography-title-line-height",
+    "typography-heading-font-size",
+    "typography-heading-font-weight",
+    "typography-heading-letter-spacing",
+    "typography-heading-line-height",
+    "typography-body-font-size",
+    "typography-body-font-weight",
+    "typography-body-letter-spacing",
+    "typography-body-line-height",
+    "typography-label-font-size",
+    "typography-label-font-weight",
+    "typography-label-letter-spacing",
+    "typography-label-line-height",
+    "typography-caption-font-size",
+    "typography-caption-font-weight",
+    "typography-caption-letter-spacing",
+    "typography-caption-line-height",
+    "typography-editorial-font-family"
+  ],
+  "properties": {
+    "radius": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "background": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "card": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "card-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "popover": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "popover-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "primary": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "primary-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "secondary": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "secondary-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "muted": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "muted-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "accent": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "accent-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "destructive": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "destructive-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "warning": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "warning-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "success": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "success-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "info": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "info-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "brand": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "brand-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "border": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "input": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "ring": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "chart-1": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "chart-2": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "chart-3": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "chart-4": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "chart-5": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-primary": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-primary-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-accent": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-accent-foreground": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-border": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "sidebar-ring": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-font-family": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-font-style": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-text-transform": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-display-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-display-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-display-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-display-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-title-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-title-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-title-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-title-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-heading-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-heading-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-heading-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-heading-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-body-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-body-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-body-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-body-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-label-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-label-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-label-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-label-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-caption-font-size": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-caption-font-weight": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-caption-letter-spacing": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-caption-line-height": {
+      "$ref": "#/$defs/cssValue"
+    },
+    "typography-editorial-font-family": {
+      "$ref": "#/$defs/cssValue"
+    }
+  },
+  "$defs": {
+    "cssValue": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

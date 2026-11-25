@@ -1,0 +1,23 @@
+html,
+body,
+#app {
+  @apply h-screen w-screen overscroll-none bg-background text-foreground;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+button:not(:disabled),
+[role='button']:not(:disabled) {
+  cursor: pointer;
+}
+
+*:disabled {
+  @apply cursor-not-allowed;
+}
+
+* {
+  border-color: var(--border);
+}
+
+[aria-busy]:not([aria-busy='false']) {
+  @apply cursor-wait;
+}

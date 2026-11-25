@@ -1,0 +1,56 @@
+{
+  "name": "@yuumi/server",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bun + Elysia + PostgreSQL + Redis + Logto 服务端模板",
+  "engines": {
+    "bun": ">=1.4.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development bun --watch src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "type-check": "bunx tsc --noEmit",
+    "lint": "bunx --bun eslint .",
+    "test": "bun test tests/unit",
+    "test:integration": "bun test tests/integration",
+    "docs:check": "bun scripts/check-docs.ts",
+    "check": "bun run docs:check && bun run type-check && bun run lint && bun run test",
+    "db:generate": "bun scripts/database.ts generate",
+    "db:migrate": "bun scripts/database.ts migrate",
+    "auth:config": "bun scripts/auth-config.ts",
+    "auth:user": "bun scripts/auth-user.ts",
+    "openapi:export": "bun scripts/export-openapi.ts"
+  },
+  "dependencies": {
+    "@bogeychan/elysia-logger": "^0.1.10",
+    "@elysiajs/cors": "^1.4.2",
+    "@elysiajs/openapi": "^1.4.12",
+    "@elysiajs/server-timing": "^1.4.0",
+    "@logto/js": "^6.1.2",
+    "@node-idempotency/core": "^1.0.11",
+    "@node-idempotency/storage-adapter-memory": "^1.0.5",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^1.0.0-rc.5-5935859",
+    "drizzle-orm": "^1.0.0-rc.5-5935859",
+    "elysia": "latest",
+    "file-stream-rotator": "^1.0.0",
+    "http-errors": "^2.0.1",
+    "ipaddr.js": "^2.5.0",
+    "jose": "^6.2.12",
+    "nanoid": "^6.0.2",
+    "pg": "^8.16.3",
+    "pino": "^10.4.0",
+    "safe-stable-stringify": "^2.5.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "@types/http-errors": "^2.0.5",
+    "bun-types": "latest",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}

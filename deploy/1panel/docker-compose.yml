@@ -1,0 +1,48 @@
+name: porthole-rewrite
+
+services:
+  api:
+    image: porthole-rewrite-api:local
+    build:
+      context: /mnt/vdb1/code/porthole/packages/server
+      dockerfile: ../../deploy/1panel/server.Dockerfile
+    env_file:
+      - /mnt/vdb1/code/porthole/packages/server/.env.local
+    environment:
+      API_PREFIX: /api
+      LOG_FILE_DIR: ""
+      PORT: "${PORTHOLE_API_PORT:-18085}"
+      PORTHOLE_BIND_HOST: 127.0.0.1
+      PORTHOLE_SHARE_DOMAIN: "${PORTHOLE_SHARE_DOMAIN:-dev.preyou.site}"
+    healthcheck:
+      test:
+        - CMD
+        - bun
+        - -e
+        - "const response = await fetch('http://127.0.0.1:' + Bun.env.PORT + '/api/health'); process.exit(response.ok ? 0 : 1)"
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 5s
+    # 共享 Linux 宿主网络才能读取可发布的本机监听端口。
+    network_mode: host
+    restart: unless-stopped
+
+  web:
+    image: porthole-rewrite-web:local
+    build:
+      context: /mnt/vdb1/code/porthole/deploy/1panel
+      dockerfile: web.Dockerfile
+      additional_contexts:
+        assets: /mnt/vdb1/code/porthole/packages/web/dist
+    environment:
+      NGINX_ENVSUBST_FILTER: "^PORTHOLE_"
+      PORTHOLE_API_PORT: "${PORTHOLE_API_PORT:-18085}"
+      PORTHOLE_WEB_PORT: "${PORTHOLE_WEB_PORT:-18084}"
+      PORTHOLE_MANAGEMENT_HOST: "${PORTHOLE_MANAGEMENT_HOST:-dev.preyou.site}"
+      PORTHOLE_SHARE_DOMAIN: "${PORTHOLE_SHARE_DOMAIN:-dev.preyou.site}"
+    depends_on:
+      api:
+        condition: service_healthy
+    network_mode: host
+    restart: unless-stopped

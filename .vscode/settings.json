@@ -1,0 +1,28 @@
+{
+  "npm.packageManager": "bun",
+  "npm.scriptRunner": "bun",
+  "editor.formatOnSave": false,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "i18n-ally.localesPaths": [
+    "packages/web/src/locales"
+  ],
+  "tailwindCSS.classFunctions": [
+    "cn",
+    "$cn",
+    "cva"
+  ]
+}

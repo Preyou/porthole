@@ -1,0 +1,36 @@
+{
+  "name": "porthole",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "内网服务子域名分享项目",
+  "scripts": {
+    "setup": "bun scripts/setup.ts",
+    "dev": "bun scripts/tasks.ts dev",
+    "dev:local": "bun scripts/dev-local.ts",
+    "dev:server": "bun run --cwd packages/server dev",
+    "dev:web": "bun run --cwd packages/web dev",
+    "start": "bun scripts/tasks.ts start",
+    "start:web": "bun run --cwd packages/web start",
+    "generate:web": "bun scripts/tasks.ts generate",
+    "db:migrate": "bun run --cwd packages/server db:migrate",
+    "auth:user": "bun run --cwd packages/server auth:user",
+    "auth:user:local": "bun scripts/dev-local.ts auth:user",
+    "check": "bun run docs:check && bun run test:create && bun run test:local && bun scripts/tasks.ts check",
+    "docs:check": "bun scripts/check-docs.ts",
+    "test:create": "bun test scripts/create-project.test.ts",
+    "test:local": "bun test scripts/local-config.test.ts",
+    "build": "bun scripts/tasks.ts build",
+    "create": "bun scripts/create-project.ts",
+    "infra:up": "docker compose up -d --wait",
+    "infra:down": "docker compose down"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.7.3",
+    "bun-types": "latest",
+    "eslint": "^9.39.2",
+    "eslint-plugin-format": "^1.1.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}

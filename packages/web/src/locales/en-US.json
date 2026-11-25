@@ -1,0 +1,182 @@
+{
+  "common": {
+    "language": "Language",
+    "theme": "Theme",
+    "followSystem": "Follow system",
+    "colorMode": {
+      "dark": "Dark theme",
+      "light": "Light theme"
+    },
+    "locale": {
+      "enUS": "English",
+      "zhCN": "简体中文"
+    },
+    "loading": "Loading…",
+    "requestSucceeded": "Request successful",
+    "requestFailed": "Request failed. Please try again later.",
+    "requestTimedOut": "Request timed out. Please try again later.",
+    "localeLoadFailed": "Could not load the language. Please try again.",
+    "retry": "Retry",
+    "userMenu": "User menu",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "backHome": "Back to home",
+    "disabled": "Sign-in is disabled",
+    "disabledDetail": "This area requires an active session.",
+    "pending": "Sign-in is unavailable",
+    "pendingLogto": "Ask your administrator to complete the Logto configuration.",
+    "invalidCredentials": "Incorrect username or password.",
+    "rateLimited": "Too many attempts. Please try again later.",
+    "fields": {
+      "username": "Username",
+      "password": "Password"
+    },
+    "signOut": "Sign out",
+    "signedInUser": "Signed-in user",
+    "redirecting": "Redirecting to sign in…"
+  },
+  "welcome": {
+    "title": "Service sharing",
+    "description": "Share a local service with its own subdomain, expiry, visit limit, and access key.",
+    "enter": "Open dashboard"
+  },
+  "porthole": {
+    "title": "Share management",
+    "description": "Share a local service with its own subdomain, expiry, visit limit, and access key.",
+    "create": "Create share",
+    "createDetail": "Choose a listening port and set the share address and access conditions.",
+    "edit": "Edit share",
+    "editDetail": "Update access settings. Changing the key asks visitors to verify again.",
+    "sharesTitle": "Shares",
+    "shareCount": "{count} total",
+    "refresh": "Refresh ports",
+    "refreshShares": "Refresh shares",
+    "sharesError": "Could not load shares",
+    "ports": {
+      "title": "Discovered ports",
+      "range": "Port range 50100–50999",
+      "error": "Could not discover local ports",
+      "empty": "No listening ports found",
+      "emptyDetail": "Start a service on the server. The list refreshes automatically.",
+      "search": "Search port numbers",
+      "noMatches": "No matching ports",
+      "unavailable": "Unreachable",
+      "sharePort": "Share port {port}"
+    },
+    "stale": "Refresh failed. Showing the last loaded data.",
+    "empty": "No shares yet",
+    "emptyDetail": "Create a share to open a local service from a link.",
+    "status": {
+      "active": "Open",
+      "changed": "Upstream changed",
+      "exhausted": "Limit reached",
+      "expired": "Expired",
+      "offline": "Upstream offline",
+      "revoked": "Revoked"
+    },
+    "statusHelp": {
+      "changed": "Verify the service now listening on this port before reconnecting.",
+      "offline": "The service on this port is temporarily unreachable."
+    },
+    "hoursLeft": "{hours}h {minutes}m left",
+    "minutesLeft": "{minutes}m left",
+    "quota": "{visits}/{max} visits used",
+    "unlimited": "Unlimited visits",
+    "protected": "Key required",
+    "copyLink": "Copy link",
+    "copyKey": "Copy key",
+    "copyDetails": "Copy share details",
+    "detailsText": "{name}\n{url}\nExpires {expiration}",
+    "copied": "Copied",
+    "keyCopied": "Access key copied",
+    "copyFailed": "Could not copy. Select and copy the text manually.",
+    "open": "Open in new tab",
+    "qr": "QR code",
+    "qrDetail": "Scan the QR code to open the share link.",
+    "qrAlt": "QR code for the {name} share link",
+    "qrFailed": "Could not generate a QR code. Copy the link instead.",
+    "extend": "Extend by 1 hour",
+    "manage": "Manage {name}",
+    "actions": "Manage",
+    "reconnect": "Reconnect",
+    "revoke": "Revoke share",
+    "confirm": {
+      "revoke": "Revoking {name} immediately disables its share link.",
+      "reconnect": "Confirm that the current service on the port is the intended target for {name}.",
+      "delete": "Permanently delete “{name}” and its visitor sessions? The link will stop working, and the record cannot be restored."
+    },
+    "feedback": {
+      "extend": "Share extended by one hour",
+      "reconnect": "Share reconnected",
+      "revoke": "Share revoked",
+      "delete": "Share permanently deleted"
+    },
+    "accessKey": "Share access key",
+    "keyReveal": "Copy the key now. After closing, you can generate a new key by editing the share.",
+    "slugHelp": "Leave blank to generate a subdomain under .{domain}.",
+    "slugPlaceholder": "Generate automatically",
+    "slugInvalid": "Use 1–63 letters, digits, or hyphens, starting and ending with a letter or digit.",
+    "durationEditHelp": "Enter 0 to keep the current expiry.",
+    "quotaHelp": "Enter 0 for no limit. Each new visitor session counts as one visit.",
+    "nameRequired": "Enter a service name.",
+    "keyInvalid": "Use an access key between 8 and 128 characters.",
+    "saved": "Share saved",
+    "upstreamHostHelp": "Use the local address for services that only accept a local Host, such as Vite.",
+    "upstreamHostModes": {
+      "original": "Keep the original domain",
+      "local": "Use the local address"
+    },
+    "keys": {
+      "keep": "Keep current setting",
+      "generate": "Generate a random key",
+      "none": "No key required",
+      "custom": "Use a custom key"
+    },
+    "fields": {
+      "port": "Listening port",
+      "name": "Service name",
+      "upstreamHostMode": "Upstream Host",
+      "slug": "Subdomain",
+      "duration": "Duration in minutes",
+      "quota": "Maximum visits",
+      "keyMode": "Access key setting",
+      "secret": "Custom access key",
+      "description": "Description (optional)"
+    },
+    "viewPorts": "View ports",
+    "descriptionPlaceholder": "For example, an internal demo preview",
+    "descriptionLength": "Use 500 characters or fewer.",
+    "copyLinkFor": "Copy the link for {name}",
+    "delete": "Delete permanently",
+    "filters": {
+      "search": "Search shares",
+      "searchPlaceholder": "Search by name, description, domain, or port",
+      "status": "Filter by status",
+      "protocol": "Filter by protocol",
+      "allStatuses": "All statuses",
+      "allProtocols": "All protocols",
+      "noMatches": "No matching shares",
+      "clear": "Clear search and filters",
+      "matchCount": "Showing {count} of {total}"
+    },
+    "columns": {
+      "share": "Share",
+      "status": "Status",
+      "port": "Port",
+      "access": "Expiry and access",
+      "actions": "Actions"
+    },
+    "summary": {
+      "active": "Active shares",
+      "attention": "Needs attention",
+      "ports": "Shareable ports"
+    }
+  }
+}

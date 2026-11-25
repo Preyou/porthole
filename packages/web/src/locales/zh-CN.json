@@ -1,0 +1,182 @@
+{
+  "common": {
+    "language": "语言",
+    "theme": "主题",
+    "followSystem": "跟随系统",
+    "colorMode": {
+      "dark": "暗色主题",
+      "light": "亮色主题"
+    },
+    "locale": {
+      "enUS": "English",
+      "zhCN": "简体中文"
+    },
+    "loading": "正在加载…",
+    "requestSucceeded": "请求成功",
+    "requestFailed": "请求失败，请稍后重试",
+    "requestTimedOut": "请求超时，请稍后重试",
+    "localeLoadFailed": "语言加载失败，请重试",
+    "retry": "重试",
+    "userMenu": "用户菜单",
+    "save": "保存",
+    "saving": "保存中…",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signingIn": "正在登录…",
+    "backHome": "返回首页",
+    "disabled": "登录已关闭",
+    "disabledDetail": "此区域需要有效的登录会话。",
+    "pending": "当前无法登录",
+    "pendingLogto": "请联系管理员完成 Logto 配置。",
+    "invalidCredentials": "用户名或密码错误。",
+    "rateLimited": "尝试次数过多，请稍后重试。",
+    "fields": {
+      "username": "用户名",
+      "password": "密码"
+    },
+    "signOut": "退出登录",
+    "signedInUser": "已登录用户",
+    "redirecting": "正在前往登录页面…"
+  },
+  "welcome": {
+    "title": "内网服务分享",
+    "description": "用子域名分享本机服务，并控制访问时长、次数和密钥。",
+    "enter": "打开管理台"
+  },
+  "porthole": {
+    "title": "分享管理",
+    "description": "用子域名分享本机服务，并控制访问时长、次数和密钥。",
+    "create": "创建分享",
+    "createDetail": "选择监听端口，然后设置分享地址和访问条件。",
+    "edit": "编辑分享",
+    "editDetail": "更新访问设置。更换密钥后，访客需要重新验证。",
+    "sharesTitle": "分享记录",
+    "shareCount": "共 {count} 条",
+    "refresh": "刷新端口",
+    "refreshShares": "刷新分享记录",
+    "sharesError": "无法加载分享记录",
+    "ports": {
+      "title": "已发现端口",
+      "range": "端口范围 50100–50999",
+      "error": "无法发现本机端口",
+      "empty": "未发现监听端口",
+      "emptyDetail": "在服务器启动服务后，列表会自动刷新。",
+      "search": "搜索端口号",
+      "noMatches": "没有匹配的端口",
+      "unavailable": "无法连通",
+      "sharePort": "分享端口 {port}"
+    },
+    "stale": "刷新失败，当前显示的是上次加载的数据。",
+    "empty": "还没有分享",
+    "emptyDetail": "创建一条分享，即可用链接访问内网服务。",
+    "status": {
+      "active": "开放中",
+      "changed": "上游已变化",
+      "exhausted": "次数用尽",
+      "expired": "已到期",
+      "offline": "上游离线",
+      "revoked": "已撤销"
+    },
+    "statusHelp": {
+      "changed": "核对当前监听服务后，可以重新连接此分享。",
+      "offline": "端口上的服务暂时无法访问。"
+    },
+    "hoursLeft": "剩余 {hours} 小时 {minutes} 分钟",
+    "minutesLeft": "剩余 {minutes} 分钟",
+    "quota": "已用 {visits}/{max} 次",
+    "unlimited": "不限次数",
+    "protected": "需要密钥",
+    "copyLink": "复制链接",
+    "copyKey": "复制密钥",
+    "copyDetails": "复制分享说明",
+    "detailsText": "{name}\n{url}\n到期时间 {expiration}",
+    "copied": "已复制",
+    "keyCopied": "已复制密钥",
+    "copyFailed": "复制失败，请手动选择并复制。",
+    "open": "新标签打开",
+    "qr": "二维码",
+    "qrDetail": "扫描二维码打开分享链接。",
+    "qrAlt": "{name} 的分享链接二维码",
+    "qrFailed": "二维码无法生成，请直接复制链接。",
+    "extend": "续期一小时",
+    "manage": "管理 {name}",
+    "actions": "管理",
+    "reconnect": "重新连接",
+    "revoke": "撤销分享",
+    "confirm": {
+      "revoke": "撤销「{name}」后，分享链接会立即失效。",
+      "reconnect": "已核对「{name}」当前端口上的服务。确认后，访问将转发到它。",
+      "delete": "永久删除「{name}」及其访客会话？删除后，链接立即失效，记录无法恢复。"
+    },
+    "feedback": {
+      "extend": "已续期一小时",
+      "reconnect": "已重新连接",
+      "revoke": "已撤销分享",
+      "delete": "已永久删除分享"
+    },
+    "accessKey": "分享密钥",
+    "keyReveal": "请现在复制密钥。关闭后如需新密钥，可以编辑分享重新生成。",
+    "slugHelp": "留空时自动生成，链接使用 .{domain} 后缀。",
+    "slugPlaceholder": "自动生成",
+    "slugInvalid": "使用 1–63 个字母、数字或连字符，首尾使用字母或数字。",
+    "durationEditHelp": "填 0 保留当前到期时间。",
+    "quotaHelp": "填 0 表示不限次数。每个新访客会话计一次。",
+    "nameRequired": "请输入服务名称。",
+    "keyInvalid": "密钥长度需为 8–128 个字符。",
+    "saved": "分享已保存",
+    "upstreamHostHelp": "Vite 等只接受本地 Host 的服务，可选择「使用本机地址」。",
+    "upstreamHostModes": {
+      "original": "保留原始域名",
+      "local": "使用本机地址"
+    },
+    "keys": {
+      "keep": "保留当前设置",
+      "generate": "生成随机密钥",
+      "none": "无需密钥",
+      "custom": "设置自定义密钥"
+    },
+    "fields": {
+      "port": "监听端口",
+      "name": "服务名称",
+      "upstreamHostMode": "上游 Host",
+      "slug": "子域名",
+      "duration": "有效期（分钟）",
+      "quota": "最大访问次数",
+      "keyMode": "密钥设置",
+      "secret": "自定义密钥",
+      "description": "描述（选填）"
+    },
+    "viewPorts": "查看端口",
+    "descriptionPlaceholder": "例如：用于演示的内部预览环境",
+    "descriptionLength": "描述最多 500 字。",
+    "copyLinkFor": "复制「{name}」的链接",
+    "delete": "永久删除",
+    "filters": {
+      "search": "搜索分享记录",
+      "searchPlaceholder": "搜索名称、描述、域名或端口",
+      "status": "按状态筛选",
+      "protocol": "按协议筛选",
+      "allStatuses": "全部状态",
+      "allProtocols": "全部协议",
+      "noMatches": "没有匹配的分享",
+      "clear": "清除搜索和筛选",
+      "matchCount": "显示 {count} 条，共 {total} 条"
+    },
+    "columns": {
+      "share": "分享",
+      "status": "状态",
+      "port": "端口",
+      "access": "期限与访问",
+      "actions": "操作"
+    },
+    "summary": {
+      "active": "开放中的分享",
+      "attention": "需要处理",
+      "ports": "可分享端口"
+    }
+  }
+}
